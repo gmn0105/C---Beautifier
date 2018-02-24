@@ -1,0 +1,38 @@
+<html><pre>
+
+1   <font color='#FF00FF'><b>#include &lt;stdio.h&gt;</b></font>
+2   <font color='#0000FF'><b>int </b></font><font color='#0000FF'><a name="main">main</a></font>()
+3   {
+4       <font color='#0000FF'><b>int </b></font><font color='#0000FF'><a name="n">n</a></font><b>,</b><font color='#0000FF'><a name="array">array</a></font>[<font color='#00FFFF'><i>1000</i></font>]<b>,</b><font color='#0000FF'><a name="c">c</a></font><b>,</b><font color='#0000FF'><a name="d">d</a></font><b>,</b><font color='#0000FF'><a name="t">t</a></font>;
+5       <font color='#0000FF'><a name="printf">printf</a></font>(<font color='#FF0000'>&quot;Enter number of elements\n&quot;</font>);
+6       <font color='#0000FF'><a name="scanf">scanf</a></font>(<font color='#FF0000'>&quot;%d&quot;</font><b>,</b><b>&amp;</b><font color='#0000FF'><a href="#n">n</a></font>);
+7       <font color='#0000FF'><a href="#printf">printf</a></font>(<font color='#FF0000'>&quot;Enter %d integers\n&quot;</font><b>,</b><font color='#0000FF'><a href="#n">n</a></font>);
+8       <font color='#0000FF'><b>for </b></font>(<font color='#0000FF'><a href="#c">c</a> </font><b>=</b><font color='#00FFFF'><i>0</i></font>; <font color='#0000FF'><a href="#c">c</a> </font><b>&lt;</b><font color='#0000FF'><a href="#n">n</a></font>; <font color='#0000FF'><a href="#c">c</a></font><b>++</b>)
+9       {
+10          <font color='#0000FF'><a href="#scanf">scanf</a></font>(<font color='#FF0000'>&quot;%d&quot;</font><b>,</b><b>&amp;</b><font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#c">c</a></font>]);
+11          
+12      }
+13      <font color='#0000FF'><b>for </b></font>(<font color='#0000FF'><a href="#c">c</a> </font><b>=</b><font color='#00FFFF'><i>1</i></font>; <font color='#0000FF'><a href="#c">c</a> </font><b>&lt;=</b><font color='#0000FF'><a href="#n">n</a> </font><b>-</b><font color='#00FFFF'><i>1</i></font>; <font color='#0000FF'><a href="#c">c</a></font><b>++</b>)
+14      {
+15          <font color='#0000FF'><a href="#d">d</a> </font><b>=</b><font color='#0000FF'><a href="#c">c</a></font>;
+16          <font color='#0000FF'><b>while </b></font>(<font color='#0000FF'><a href="#d">d</a> </font><b>&gt;</b><font color='#00FFFF'><i>0</i></font><b>&amp;&amp;</b><font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#d">d</a></font><b>-</b><font color='#00FFFF'><i>1</i></font>]<b>&gt;</b><font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#d">d</a></font>])
+17          {
+18              <font color='#0000FF'><a href="#t">t</a> </font><b>=</b><font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#d">d</a></font>];
+19              <font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#d">d</a></font>]<b>=</b><font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#d">d</a></font><b>-</b><font color='#00FFFF'><i>1</i></font>];
+20              <font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#d">d</a></font><b>-</b><font color='#00FFFF'><i>1</i></font>]<b>=</b><font color='#0000FF'><a href="#t">t</a></font>;
+21              <font color='#0000FF'><a href="#d">d</a></font><b>--</b>;
+22              
+23          }
+24          
+25      }
+26      <font color='#0000FF'><a href="#printf">printf</a></font>(<font color='#FF0000'>&quot;Sorted list in ascending order:\n&quot;</font>);
+27      <font color='#0000FF'><b>for </b></font>(<font color='#0000FF'><a href="#c">c</a> </font><b>=</b><font color='#00FFFF'><i>0</i></font>; <font color='#0000FF'><a href="#c">c</a> </font><b>&lt;=</b><font color='#0000FF'><a href="#n">n</a> </font><b>-</b><font color='#00FFFF'><i>1</i></font>; <font color='#0000FF'><a href="#c">c</a></font><b>++</b>)
+28      {
+29          <font color='#0000FF'><a href="#printf">printf</a></font>(<font color='#FF0000'>&quot;%d\n&quot;</font><b>,</b><font color='#0000FF'><a href="#array">array</a></font>[<font color='#0000FF'><a href="#c">c</a></font>]);
+30          
+31      }
+32      <font color='#0000FF'><b>return </b></font><font color='#00FFFF'><i>0</i></font>;
+33      
+34  }
+35  
+</pre></html>
